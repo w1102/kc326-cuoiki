@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trang chủ</title>
+	
+	<link rel="stylesheet" href="basic.css">
+	
+	<style>
+	
+		.root {
+			display: flex;
+			flex-direction: column;
+			height: 100vh;
+		}
+	
+		.content {
+			flex: 1;
+			
+			/* 8d61fe */
+			
+			background: linear-gradient(to left, #8d61fe 0%, rgba(71, 162, 249, 0.6) 100%);
+		}
+		
+		
+		
+		.container .about {
+			width: 100%;
+		  }
+		
+		  .about .title {
+			text-align: center;
+			margin: 20px 0 45px 0;
+			text-transform: uppercase;
+			font-size: 30px;
+			text-shadow: rgb(255, 0, 76) 0px 5px 15px;
+			color: rgb(252, 255, 104);
+		  }
+		  .about .text {
+			flex: 0 0 32.33333%;
+			width: 93%;
+			line-height: 1.5;
+			padding: 0 15px;
+			border: 2px solid var(--white);
+			padding: 15px;
+			box-shadow: rgb(255, 255, 255) 0px 0px 20px 5px;
+			border-radius: 15px;
+			text-align: left;
+			margin: 0 auto;
+		}
+		
+		.content {
+			display: flex;
+			
+		}
+		
+		.table-container {
+			flex: 1;
+		}
+		
+		.circuit-container {
+			position: relative;
+			margin: 0 auto;
+			width: 50%;
+		}
+		
+		.circuit-container img {
+			width: 90%;
+		}
+		
+	</style>
+	
+</head>
+<body>
+	
+<div class="root">
+	
+	<!-- thanh điều hướng -->
+	<div id="header"></div>
+	<script src="/header/include-header.js" type="module"></script>
+	
+	<!-- nội dung -->
+	<div class="content">
+		
+		<div class="circuit-container">
+			<img class="centerXY" src="/img/circuit.png" alt="">
+		</div>
+		
+		
+		<div class="table-container">
+			<br><br><br>
+			<section class="container">
+				<div class="about">
+				  <div class="title">
+					<h3>Mục tiêu bài tập</h3>
+				  </div>
+				  <div class="text">
+					<p><b>- Đánh giá được</b> các chuẩn đầu ra C01 (CO1), CO2 (CO2), CO3 (CO3, CO4), CO4 (CO4)</p>
+					<p><b>- Thực hiện được</b> các chức năng điều khiển sáng/tắt 4 led đơn và điều chỉnh được độ sáng led D0 với giá trị điều khiển từ 0 đến 1023 </p>
+					<p><b>- Sau đó, thu thập được</b> các dữ liệu điện áp từ biến trở VR bằng Chart.js</p>
+				  </div>
+					
+				</div>
+			</section>    
+		</div>
+		
+	</div>
+	
+	<div id="footer"></div>
+	<script src="/footer/include-footer.js" type="module"></script>
+	
+</div>
+
+
+	
+</body>
+</html>

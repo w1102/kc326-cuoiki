@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chartjs</title>
+
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="/basic.css">
+
+	<!-- thư viện chartjs -->
+	<script src="/modules/chart.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+	<div class="root">
+
+		<!-- thanh điều hướng -->
+		<div id="header"></div>
+		<script src="/header/include-header.js" type="module"></script>
+
+		<!-- nội dung -->
+		<div class="content">
+			<h3 class="top_title">
+				dữ liệu điện áp thu thập từ biến trở thông qua kênh analog A0  <br />
+				sử dụng Chart.js
+			</h3>
+
+			<div class="box-width add-box-background centerXY">
+
+				<div id="canvas-container">
+					<canvas id="myChart"></canvas>
+				</div>
+
+				<div class="colorpicker-container">
+					<div class="colorpicker" id="ff479c"></div>
+					<!-- pink   -->
+					<div class="colorpicker" id="7f00ff"></div>
+					<!-- violet -->
+					<div class="colorpicker active" id="010c1e"></div>
+					<!-- blue   -->
+					<div class="colorpicker" id="00ff3f"></div>
+					<!-- green  -->
+					<div class="colorpicker" id="fffb38"></div>
+					<!-- yellow -->
+				</div>
+			</div>
+
+
+
+			<!-- fill color to color picker -->
+			<script>
+				for (const color of document.querySelectorAll('.colorpicker')) {
+					color.style.backgroundColor = '#' + color.id
+				}
+			</script>
+
+
+		</div>
+		
+		<div id="footer"></div>
+		<script src="/footer/include-footer.js" type="module"></script>
+		
+	</div>
+
+
+	<script src="index.js" type="module"></script>
+
+
+</body>
+
+</html>

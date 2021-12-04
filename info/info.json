@@ -1,0 +1,62 @@
+{
+	"minhtam": {
+		"hoten": "Bùi Thị Minh Tâm",
+		"mssv": "B1905977",
+		"nganh": "Quản lí công nghiệp",
+		"malop": "TN1983A4",
+		"baitap1": "https://minhtamb1905977.github.io/KC326/KC326",
+		"baitap2": "https://tienb1906006.github.io/Math/GT",
+		"email": "https://minhtamb1905977.github.io/TAM/Home",
+		"donggop": 100
+	},
+	"phungtien": {
+		"hoten": "Phạm Nguyễn Phụng Tiên",
+		"mssv": "B1906006",
+		"nganh": "Quản lí công nghiệp",
+		"malop": "TN1983A4",
+		"baitap1": "https://tienb1906006.github.io/Bt/BTKT",
+		"baitap2": "https://tienb1906006.github.io/Math/GT",
+		"email": "tienb1906006@student.ctu.edu.vn",
+		"donggop": 100
+	},
+	"kimngoc": {
+		"hoten": "Hoàng Kim Ngọc",
+		"mssv": "B1905949",
+		"nganh": "Quản lí công nghiệp",
+		"malop": "TN1983A4",
+		"baitap1": "https://hoangkimngoc2001.github.io/KC326/home",
+		"baitap2": "https://hoangkimngoc2001.github.io/Math/index.html",
+		"email": "ngocb1905949@student.ctu.edu.vn",
+		"donggop": 100
+	},
+	"kimduyen": {
+		"hoten": "Nguyễn Thị Kim Duyên",
+		"mssv": "B1905898",
+		"nganh": "Quản lí công nghiệp",
+		"malop": "TN1983A4",
+		"baitap1": "https://duyenb1905898.github.io/kc326-test/site/page/",
+		"baitap2": "https://duyenb1905898.github.io/kc326-test/site/",
+		"email": "duyenb1905898@student.ctu.edu.vn",
+		"donggop": 100
+	},
+	"nhutquang": {
+		"hoten": "Trần Nhựt Quang",
+		"mssv": "B1907058",
+		"nganh": "Kĩ thuật cơ điện tử",
+		"malop": "TN19S3A1",
+		"baitap1": "https://w1102.github.io/",
+		"baitap2": "https://bt2.netlify.app/",
+		"email": "quangb1907058@student.ctu.edu.vn",
+		"donggop": 100
+	},
+	"longphu": {
+		"hoten": "Nguyễn Long Phú",
+		"mssv": "B1905966",
+		"nganh": "Quản lí công nghiệp",
+		"malop": "TN1983A4",
+		"baitap1": "https://phu1305.github.io/Long-phu/Trang%20chu.html",
+		"baitap2": "https://phu1305.github.io/Long-phu/Trang%20chu%202.html",
+		"email": "phub1905866@student.ctu.edu.vn",
+		"donggop": 100
+	}
+}
