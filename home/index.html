@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trang chủ</title>
+
+	<style>
+		a {
+			color: #330000;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: none;
+			color: #CC0000;
+		}
+
+
+		.root {
+			display: flex;
+			flex-direction: column;
+			height: 100vh;
+		}
+
+		.content {
+			flex: 1;
+			background-color: #EEEEEE;
+		}
+
+		.container .about {
+			width: 100%;
+		}
+
+		.about .title {
+			text-align: center;
+			margin: 3% 0 3% 0;
+			text-transform: uppercase;
+			font-size: 25px;
+			text-shadow: rgb(79, 63, 221) 0px 5px 15px;
+			color: red;
+
+		}
+
+		.about .text {
+			background: linear-gradient(#FFCCFF, rgba(0, 10, 0, 0.1)), url('https://media.istockphoto.com/photos/sphere-backgrounds-and-planet-concept-picture-id1224972179?k=20&m=1224972179&s=612x612&w=0&h=ttWSdW2rC-zRnujrT0iPOxH6AozlxzMDRAZ1jB2uNX0=');
+			flex: 0 0 32.33333%;
+			width: 90%;
+			font-size: 20px;
+			line-height: 1.2;
+			padding: 0 15px;
+			border: 2px solid var(--white);
+			padding: 15px;
+			box-shadow: rgb(255, 255, 255) 0px 0px 20px 5px;
+			border-radius: 15px;
+			text-align: left;
+			margin: 0 auto;
+		}
+
+		.content {
+			display: flex;
+			align-items: center;
+
+		}
+
+		.table-container {
+			flex: 1;
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: space-between;
+		}
+
+		.table-container:last-child {
+			margin-bottom: 10px;
+		}
+
+		.circuit-container {
+			margin-left: 5px;
+			width: 50%;
+		}
+
+		.circuit-container img {
+			width: 100%;
+		}
+
+		@media only screen and (max-width: 1050px) {
+			.circuit-container {
+				margin-left: 5px;
+				width: 90%;
+			}
+			.content {
+				flex-direction: column;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="root">
+
+		<!-- thanh điều hướng -->
+		<div id="header"></div>
+		<script src="/header/include-header.js" type="module"></script>
+
+		<!-- nội dung -->
+		<div class="content">
+
+			<div class="circuit-container">
+				<img class="centerXY" src="/img/circuit.png" alt="">
+			</div>
+
+
+			<div class="table-container">
+				<section class="container">
+					<div class="about">
+
+						<div class="title">
+							<h3>Nội dung bài tập</h3>
+						</div>
+
+						<div class="text">
+							<a href="/home/index.html">
+								<p><b> &#9758; Trang 1: </b>Giới thiệu về mục tiêu và nội dung bài tập.</p>
+							</a>
+
+							<a href="/info/index.html">
+								<p><b>&#9758; Trang 2: </b>Giới thiệu các thành viên và phân công công việc </p>
+							</a>
+
+							<a href="/led/index.html">
+								<p><b>&#9758; Trang 3: </b>Điều khiển sáng/tắt 4 led đơn</p>
+							</a>
+
+							<a href="/chartjs/index.html">
+								<p><b>&#9758; Trang 4: </b>Dùng Chart.js thu thập các dữ liệu điện áp từ biến trở VR</p>
+							</a>
+
+						</div>
+					</div>
+				</section>
+
+				<section class="container">
+					<div class="about">
+						<div class="title">
+							<h3>Mục tiêu bài tập</h3>
+						</div>
+						<div class="text">
+							<p><b> &#10063; Đánh giá được</b> các chuẩn đầu ra C01 (CO1), CO2 (CO2), CO3 (CO3, CO4), CO4 (CO4)</p>
+							<p><b>&#10063; Thực hiện được</b> các chức năng điều khiển sáng/tắt 4 led đơn và điều chỉnh được độ sáng led D0 với giá trị điều khiển từ 0 đến 1023 </p>
+							<p><b>&#10063; Sau đó, thu thập được</b> các dữ liệu điện áp từ biến trở VR bằng Chart.js</p>
+						</div>
+
+					</div>
+				</section>
+			</div>
+
+
+		</div>
+		<div id="footer"></div>
+		<script src="/footer/include-footer.js" type="module"></script>
+	</div>
+
+
+</body>
+
+</html>

@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+ul {
+  margin: 0
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -75,7 +79,7 @@ header {
 
 .header_nav li .sub:after {
   content: '';
-  width: 100px;
+  width: 80px;
   height: 20px;
   position: absolute;
   top: -10px;
@@ -115,5 +119,7 @@ header {
 }
 
 .background {
-  background-color: #5758BB;
+  background: linear-gradient(
+    135deg, #373e59 52%,#ff0036 100%);
+    };
 }

@@ -9,7 +9,7 @@
 
 	/* 8d61fe */
 	font-family: "Open Sans", sans-serif;
-	background: linear-gradient(to left, #8d61fe 0%, rgba(71, 162, 249, 0.6) 100%);
+	background-color: #EEEEEE 
 }
 
 .frame {
@@ -141,12 +141,16 @@
 
 .textleft {
 	float: left;
- 	width: 65%
+ 	width: 65%;
+	 text-shadow: rgb(129 116 245) 0px 5px 15px;
+	color: red;
 }
 
 #textright {
 	float: right;
  	width: 35%; 
+	 text-shadow: rgb(129 116 245) 0px 5px 15px;
+	color: red;
 /* 	text-align: center; */
 }
 

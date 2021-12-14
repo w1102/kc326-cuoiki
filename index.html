@@ -1,119 +1,794 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Trang chủ</title>
-	
-	<link rel="stylesheet" href="basic.css">
-	
-	<style>
-	
-		.root {
-			display: flex;
-			flex-direction: column;
-			height: 100vh;
-		}
-	
-		.content {
-			flex: 1;
-			
-			/* 8d61fe */
-			
-			background: linear-gradient(to left, #8d61fe 0%, rgba(71, 162, 249, 0.6) 100%);
-		}
-		
-		
-		
-		.container .about {
-			width: 100%;
-		  }
-		
-		  .about .title {
-			text-align: center;
-			margin: 20px 0 45px 0;
-			text-transform: uppercase;
-			font-size: 30px;
-			text-shadow: rgb(255, 0, 76) 0px 5px 15px;
-			color: rgb(252, 255, 104);
-		  }
-		  .about .text {
-			flex: 0 0 32.33333%;
-			width: 93%;
-			line-height: 1.5;
-			padding: 0 15px;
-			border: 2px solid var(--white);
-			padding: 15px;
-			box-shadow: rgb(255, 255, 255) 0px 0px 20px 5px;
-			border-radius: 15px;
-			text-align: left;
-			margin: 0 auto;
-		}
-		
-		.content {
-			display: flex;
-			
-		}
-		
-		.table-container {
-			flex: 1;
-		}
-		
-		.circuit-container {
-			position: relative;
-			margin: 0 auto;
-			width: 50%;
-		}
-		
-		.circuit-container img {
-			width: 90%;
-		}
-		
-	</style>
-	
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>BÀI TẬP CUỐI KÌ KC326-NHÓM 1</title>
 </head>
+<style>
+    @import url('http://fonts.cdnfonts.com/css/happy-new-year');
+
+    body {
+        background: url('img/santa.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 100%;
+        margin: 0;
+    }
+
+    .mid {
+        margin: 10px 10% 0;
+        text-align: center;
+        height: 450px;
+    }
+
+    .bottom {
+        margin: 10% 150px 0;
+    }
+
+    #text h2 {
+        font-size: 50px;
+        color: #ff8800;
+        text-shadow: #000099 0px 5px 10px;
+        text-transform: uppercase;
+        margin: 10px;
+        text-align: center;
+    }
+
+    #text h1 {
+        text-shadow: #99FFCC 5px 5px 10px;
+        color: #5eff00;
+        font-size: 70px;
+        line-height: 60px;
+        margin: 10px 0 20px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .click {
+        margin: -50px 28% 0;
+        width: 44%;
+        text-align: center;
+    }
+
+    .oncl {
+        background-color: #f1ddb7;
+        padding: 10px;
+        font-size: 40px;
+        border-style: outset;
+        border-radius: 50px;
+    }
+
+    .click :hover {
+        background-color: #a0c083;
+    }
+
+    a {
+        color: #CC6600;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #333333;
+    }
+
+    img.shake-image {
+        position: absolute;
+        top: 385px;
+        left: 42%;
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes shake {
+        0% {
+            transform: translate(1px, 1px) rotate(0deg);
+        }
+
+        25% {
+            transform: translate(-3px, 0px) rotate(1deg);
+        }
+
+        50% {
+            transform: translate(1px, -1px) rotate(1deg);
+        }
+
+        75% {
+            transform: translate(-3px, 1px) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(1px, -2px) rotate(-1deg);
+        }
+    }
+
+    @font-face {
+        font-family: 'Mountains of Christmas';
+        font-style: normal;
+        src: local("Mountains of Christmas"), local("MountainsofChristmas-Regular"), url(https://fonts.gstatic.com/s/mountainsofchristmas/v8/dVGBFPwd6G44IWDbQtPewylJhLDHyIrT3I5b5eGTHmw.woff2) format("woff2");
+    }
+
+    .message {
+        position: absolute;
+        left: 34%;
+        top: 63%;
+        color: #de2f32;
+        ;
+        font-family: 'Mountains of Christmas';
+    }
+
+    .message h1 {
+        font-style: normal;
+        font-size: 75px;
+        margin-bottom: 0;
+        white-space: nowrap;
+    }
+
+    .message h2 {
+        margin: 0;
+        font-size: 20px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .message h2 a {
+        color: #f7be10;
+        opacity: 0.8;
+    }
+
+    .message h2 a:hover {
+        opacity: 1;
+    }
+
+    .snowflake {
+        color: #fff;
+        font-size: 1em;
+        font-family: Arial;
+        text-shadow: 0 0 1px #000;
+    }
+
+    .khungchat {
+        float: right;
+        display: none;
+    }
+
+    .snowflakes a:hover+.khungchat {
+        display: block;
+        color: red;
+    }
+
+    .khungchat p {
+        margin-left: -20px;
+        float: right;
+        color: black;
+        margin: 36px 0 0 0;
+    }
+
+    .khungchat img {
+        margin-left: -20px;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .caymai {
+        animation: caymai 1s linear;
+    }
+
+    @keyframes caymai {
+        0% {
+            transform: translateY(200%);
+        }
+
+        100% {
+            transform: translateY(0%);
+        }
+    }
+
+    .canhmaiphai {
+        animation: canhmaiphai 1s linear;
+    }
+
+    @keyframes canhmaiphai {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    .canhmaitrai {
+        animation: canhmaitrai 1s linear;
+    }
+
+    @keyframes canhmaitrai {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    .denlongphai {
+        animation: denlongphai 1s linear;
+    }
+
+    @keyframes denlongphai {
+        0% {
+            transform: translateY(-100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    .denlongtrai {
+        animation: denlongtrai 1s linear;
+    }
+
+    @keyframes denlongtrai {
+        0% {
+            transform: translateY(-100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    .thantai {
+        animation: thantai 1s linear;
+    }
+
+    @keyframes thantai {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .vang {
+        animation: vang 1s linear;
+    }
+
+    @keyframes vang {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes snowflakes-fall {
+        0% {
+            top: -10%
+        }
+
+        100% {
+            top: 100%
+        }
+    }
+
+    @-webkit-keyframes snowflakes-shake {
+        0% {
+            -webkit-transform: translateX(0px);
+            transform: translateX(0px)
+        }
+
+        50% {
+            -webkit-transform: translateX(80px);
+            transform: translateX(80px)
+        }
+
+        100% {
+            -webkit-transform: translateX(0px);
+            transform: translateX(0px)
+        }
+    }
+
+    @keyframes snowflakes-fall {
+        0% {
+            top: -10%
+        }
+
+        100% {
+            top: 100%
+        }
+    }
+
+    @keyframes snowflakes-shake {
+        0% {
+            transform: translateX(0px)
+        }
+
+        50% {
+            transform: translateX(80px)
+        }
+
+        100% {
+            transform: translateX(0px)
+        }
+    }
+
+    .snowflake {
+        position: fixed;
+        top: -10%;
+        z-index: 9999;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: default;
+        -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+        -webkit-animation-duration: 10s, 3s;
+        -webkit-animation-timing-function: linear, ease-in-out;
+        -webkit-animation-iteration-count: infinite, infinite;
+        -webkit-animation-play-state: running, running;
+        animation-name: snowflakes-fall, snowflakes-shake;
+        animation-duration: 10s, 3s;
+        animation-timing-function: linear, ease-in-out;
+        animation-iteration-count: infinite, infinite;
+        animation-play-state: running, running
+    }
+
+    .snowflake:nth-of-type(0) {
+        left: 1%;
+        -webkit-animation-delay: 0s, 0s;
+        animation-delay: 0s, 0s
+    }
+
+    .snowflake:nth-of-type(1) {
+        left: 10%;
+        -webkit-animation-delay: 1s, 1s;
+        animation-delay: 1s, 1s
+    }
+
+    .snowflake:nth-of-type(2) {
+        left: 20%;
+        -webkit-animation-delay: 6s, .5s;
+        animation-delay: 6s, .5s
+    }
+
+    .snowflake:nth-of-type(3) {
+        left: 30%;
+        -webkit-animation-delay: 4s, 2s;
+        animation-delay: 4s, 2s
+    }
+
+    .snowflake:nth-of-type(4) {
+        left: 40%;
+        -webkit-animation-delay: 2s, 2s;
+        animation-delay: 2s, 2s
+    }
+
+    .snowflake:nth-of-type(5) {
+        left: 50%;
+        -webkit-animation-delay: 8s, 3s;
+        animation-delay: 8s, 3s
+    }
+
+    .snowflake:nth-of-type(6) {
+        left: 60%;
+        -webkit-animation-delay: 6s, 2s;
+        animation-delay: 6s, 2s
+    }
+
+    .snowflake:nth-of-type(7) {
+        left: 70%;
+        -webkit-animation-delay: 2.5s, 1s;
+        animation-delay: 2.5s, 1s
+    }
+
+    .snowflake:nth-of-type(8) {
+        left: 80%;
+        -webkit-animation-delay: 1s, 0s;
+        animation-delay: 1s, 0s
+    }
+
+    .snowflake:nth-of-type(9) {
+        left: 90%;
+        -webkit-animation-delay: 3s, 1.5s;
+        animation-delay: 3s, 1.5s
+    }
+
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:700|Pacifico');
+
+    .feliz {
+        bottom: 15px;
+        width: 80%;
+        font-family: 'Pacifico', cursive;
+        font-size: 53px;
+        font-weight: 700;
+        color: #CC232A;
+        position: absolute;
+        opacity: 0;
+        animation: vem_feliz 2s forwards;
+
+    }
+
+    .fogos {
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 100px;
+        overflow: hidden;
+    }
+
+    .fogos>div {
+        border: 2px solid #fff;
+        position: absolute;
+        opacity: 0;
+        animation: solta_fogos 2s forwards;
+    }
+
+    .fogos>div.f1 {
+        left: 20%;
+        top: 40%;
+    }
+
+    .fogos>div.f2 {
+        left: 15%;
+        top: 70%;
+    }
+
+    .fogos>div.f3 {
+        right: 20%;
+        top: 40%;
+    }
+
+    .fogos>div.f4 {
+        right: 15%;
+        top: 70%;
+    }
+
+    .fogos>div span {
+        width: 6px;
+        height: 6px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        animation: estoura_fogos 3s forwards;
+    }
+
+    .fogos>div span:nth-child(1) {
+        transform: rotate(0deg);
+    }
+
+    .fogos>div span:nth-child(2) {
+        transform: rotate(120deg);
+    }
+
+    .fogos>div span:nth-child(3) {
+        transform: rotate(240deg);
+    }
+
+    .fogos>div span:before {
+        content: '';
+        width: 2px;
+        height: 50px;
+        display: block;
+        background: #f5cc06;
+        position: absolute;
+        top: -60px;
+        left: 2px;
+    }
+
+    .fogos>div span:after {
+        content: '';
+        width: 2px;
+        height: 50px;
+        display: block;
+        background: #f5cc06;
+        position: absolute;
+        bottom: -60px;
+        left: 2px;
+    }
+
+    .fogos>div span i:before {
+        content: '';
+        width: 3px;
+        height: 3px;
+        display: block;
+        border-radius: 50%;
+        background: #fff;
+        position: absolute;
+        top: -15px;
+        left: 10px;
+    }
+
+    .fogos>div span i:after {
+        content: '';
+        width: 3px;
+        height: 3px;
+        display: block;
+        border-radius: 50%;
+        background: #fff;
+        position: absolute;
+        top: -15px;
+        right: 10px;
+    }
+
+    a.author {
+        font-size: 12px;
+        text-decoration: none;
+        color: #f47c7c;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    @keyframes vem_2017 {
+        0% {
+            right: 0%;
+        }
+
+        66.6666% {
+            right: 50%;
+            margin-right: -300px;
+        }
+
+        90% {
+            right: 50%;
+            margin-right: -300px;
+        }
+
+        100% {
+            right: 50%;
+        }
+    }
+
+    @keyframes vem_e_vai_balao {
+        0% {
+            right: 0%;
+        }
+
+        40% {
+            right: 50%;
+            margin-right: -300px;
+        }
+
+        50% {
+            right: 50%;
+            margin-right: -200px;
+            top: 50%;
+        }
+
+        100% {
+            top: -100%;
+            right: 50%;
+        }
+    }
+
+    @keyframes entrega_balao {
+        0% {
+            transform: rotate(-30deg);
+            width: 40px;
+        }
+
+        100% {
+            transform: rotate(-150deg);
+            width: 70px;
+        }
+    }
+
+    @keyframes vai_2016 {
+        0% {
+            top: 50%;
+        }
+
+        100% {
+            top: -100%;
+        }
+    }
+
+    @keyframes vem_feliz {
+        0% {
+            margin-top: 0px;
+            opacity: 0;
+        }
+
+        100% {
+            margin-top: -200px;
+            ;
+            opacity: 1;
+        }
+    }
+
+    @keyframes solta_fogos {
+        0% {
+            margin-top: 100%;
+            opacity: 0;
+            width: 2px;
+            height: 30px;
+            display: block;
+            border-radius: 50%;
+        }
+
+        75% {
+            margin-top: 0%;
+            opacity: 1;
+            width: 2px;
+            height: 30px;
+            display: block;
+            border-radius: 50%;
+        }
+
+        80% {
+            margin-top: 0px;
+            margin-left: 0px;
+            opacity: 1;
+            width: 10px;
+            height: 10px;
+            display: block;
+            border-radius: 50%;
+            transform: scale(0.2);
+        }
+
+        100% {
+            opacity: 1;
+            width: 10px;
+            height: 10px;
+            display: block;
+            border-radius: 50%;
+            transform: scale(1);
+        }
+    }
+
+    @keyframes estoura_fogos {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+<script type="text/javascript">
+    function showtext() {
+        document.getElementById('hinhanh').hidden = true
+        document.getElementById('text').hidden = false
+        document.getElementById('click').hidden = false
+        document.body.style.background = "linear-gradient(#336666,rgba(0, 0, 0, 0.4)), url('https://wandisco.com/storage/app/uploads/public/5db/1b9/b2e/5db1b9b2ec36b442193330.jpg')"
+        document.body.style.backgroundSize = "cover"
+    }
+
+    function showtet() {
+        document.body.style.background = "url('img/vien.jpg')"
+        document.getElementById('snowflakes').hidden = true
+        document.getElementById('message').hidden = true
+        document.getElementById('hinhanh').hidden = false
+    }
+</script>
+
 <body>
-	
-<div class="root">
-	
-	<!-- thanh điều hướng -->
-	<div id="header"></div>
-	<script src="/header/include-header.js" type="module"></script>
-	
-	<!-- nội dung -->
-	<div class="content">
-		
-		<div class="circuit-container">
-			<img class="centerXY" src="/img/circuit.png" alt="">
-		</div>
-		
-		
-		<div class="table-container">
-			<br><br><br>
-			<section class="container">
-				<div class="about">
-				  <div class="title">
-					<h3>Mục tiêu bài tập</h3>
-				  </div>
-				  <div class="text">
-					<p><b>- Đánh giá được</b> các chuẩn đầu ra C01 (CO1), CO2 (CO2), CO3 (CO3, CO4), CO4 (CO4)</p>
-					<p><b>- Thực hiện được</b> các chức năng điều khiển sáng/tắt 4 led đơn và điều chỉnh được độ sáng led D0 với giá trị điều khiển từ 0 đến 1023 </p>
-					<p><b>- Sau đó, thu thập được</b> các dữ liệu điện áp từ biến trở VR bằng Chart.js</p>
-				  </div>
-					
-				</div>
-			</section>    
-		</div>
-		
-	</div>
-	
-	<div id="footer"></div>
-	<script src="/footer/include-footer.js" type="module"></script>
-	
-</div>
+    <div id="mid" class="mid">
+        <div id="snowflakes" class="snowflakes" aria-hidden="true">
+            <div class="snowflake">
+                ❅
+            </div>
+            <div class="snowflake">
+                ❅
+            </div>
+            <div class="snowflake">
+                ❆
+            </div>
+            <div class="snowflake">
+                <a href="javascript:void(0)" onclick="showtet()">
+                    <img src="img/gift.png" width="100px">
+                </a>
+                <div id="khungchat" class="khungchat">
+                    <p>Click me!</p>
+                    <img src="img/khungchat.png" width="105px">
+                </div>
+            </div>
+            <div class="snowflake">
+                ❅
+            </div>
+            <div class="snowflake">
+                ❆
+            </div>
+            <div class="snowflake">
+                ❄
+            </div>
+            <div class="snowflake">
+                ❅
+            </div>
+            <div class="snowflake">
+                ❆
+            </div>
+            <div class="snowflake">
+                ❄
+            </div>
+        </div>
+        <div id="message" class="message">
+            <h1>Merry Christmas!</h1>
+            <h2 class="copyright">to Mr. Nguyen Van Khanh with ♥ from <a href="/home/index.html" target="_blank">Group 1</a></h2>
+            <br>
+            <a href="/home/index.html" style="text-decoration: underline;">Đến ngay Website</a>
+        </div>
+        <div hidden id="hinhanh">
+            <img class="caymai" src="img/caymai.png" width="500px">
+            <img class="canhmaiphai" style="position: absolute; right: 0; z-index: -1;" src="img/canhmaiphai.png" width="350px">
+            <img class="canhmaitrai" style="position: absolute; left: 0; z-index: -1;" src="img/canhmaitrai.png" width="400px">
+            <img class="thantai" style="position: absolute; left: 0; top: 42%;" src="img/thantai.png" width="200px">
+            <img class="vang" style="position: absolute; left: 25%; top: 67%;" src="img/vang.png" width="60px">
+            <img class="vang" style="position: absolute; right: 25%; top: 67%;" src="img/vang.png" width="60px">
+            <img class="vang" style="position: absolute; right: 0; top: 67%;" src="img/vang.png" width="60px">
+            <img class="denlongphai" style="position: absolute; right: 28%;" src="img/denlongphai.png" width="80px">
+            <img class="denlongtrai" style="position: absolute; left: 28%;" src="img/denlongtrai.png" width="100px">
+            <div style="display: inline-block;">
+                <a href="javascript:void(0)">
+                    <img onclick="showtext()" class="shake-image" src="img/tuitien.png" width="120px">
+                </a>
+            </div>
+            <div class="feliz">
+                Happy new year!<br>2022
+                <a href="/home/index.html" style="text-decoration: underline; font-size: 16px; display: block;">Đến ngay Website</a>
+            </div>
 
+            <div class="fogos">
+                <div class="f1">
+                    <span><i></i></span>
+                    <span><i></i></span>
+                    <span><i></i></span>
+                </div>
+                <div class="f2">
+                    <span><i></i></span>
+                    <span><i></i></span>
+                    <span><i></i></span>
+                </div>
+                <div class="f3">
+                    <span><i></i></span>
+                    <span><i></i></span>
+                    <span><i></i></span>
+                </div>
+                <div class="f4">
+                    <span><i></i></span>
+                    <span><i></i></span>
+                    <span><i></i></span>
+                </div>
+            </div>
+        </div>
 
-	
+        <div hidden id="text">
+            <br><br><br>
+            <h2>IoT technology and applications KC326</h2>
+            <h2> Semester 1, 2021-2022 </h2>
+            <hr>
+            <br>
+            <h1>welcome to group 1</h1>
+            <br><br><br>
+        </div>
+    </div>
+    <div hidden id="click" class="click">
+        <a href="home/index.html">
+            <p class="oncl"><b>Click here to see the exercise!</b>
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 </body>
+
 </html>

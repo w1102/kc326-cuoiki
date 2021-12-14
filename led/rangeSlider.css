@@ -1,6 +1,7 @@
 input[type=range] {
   -webkit-appearance: none;
-  margin: 18px 0;
+  /*   margin: 18px 0; */
+  background-color: transparent;
   width: 200px;
 }
 
@@ -50,7 +51,7 @@ input[type=range]::-moz-range-thumb {
   height: 36px;
   width: 16px;
   border-radius: 3px;
-  background: #ffffff;
+  /*   background: #ffffff; */
   cursor: pointer;
 }
 
@@ -85,7 +86,7 @@ input[type=range]::-ms-thumb {
   height: 36px;
   width: 16px;
   border-radius: 3px;
-  background: #ffffff;
+  /*   background: #ffffff; */
   cursor: pointer;
 }
 

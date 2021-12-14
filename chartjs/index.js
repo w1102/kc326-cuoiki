@@ -27,6 +27,10 @@ const chart = new Chart(ctx, {
 	options: {
 		maintainAspectRatio: false,
 		responsive: true,
+		interaction: {
+			intersect: false,
+			mode: 'index',
+		},
 		scales: {
 			x: {
 				ticks: {
@@ -52,6 +56,7 @@ const chart = new Chart(ctx, {
 				}
 			}
 		}
+		
 	},
 	// scaleFontColor: "red"
 })

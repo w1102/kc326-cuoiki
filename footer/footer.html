@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Footer</title>
-	
-	<style>
 
-	
+	<style>
+		.footer-container a,
+		.footer-container a:hover,
+		.footer-container a:visited {
+			color: transparent;
+			text-decoration: none;
+		}
+
+
 		.footer-container {
-/* 			position: fixed;
-			bottom: 0; */
-			background-color: #5758BB;
+			background: linear-gradient(135deg, #373e59 52%, #ff0036 100%);
 			width: 100vw;
 			height: 30px;
 			display: flex;
 			align-items: center;
-			
+
 		}
-		
+
 		.footer-container p {
 			flex: 1;
 			text-align: center;
@@ -27,57 +32,91 @@
 			font-size: 15px;
 			margin: 0
 		}
-		
+
 		.footer-avt {
-			height: 100%
+			height: 100%;
+			display: flex;
+			align-items: center;
 		}
 		
-		.footer-avt img {
+		
+		
+		.footer-avt a {
+			display: flex;
+			align-items: center;
+		}
+		
+		.teacher-avt a {
+			display: flex;
+			align-items: center;
+		}
+	
+		
+		
+
+		.footer-avt img,
+		.teacher-avt img {
 			margin-right: 30px;
 			border-radius: 50%;
 			width: 25px;
 		}
-		
-		.footer-avt img:hover {
-			border: 2px solid black ;
+
+		.teacher-avt img {
+			margin-left: 8px;
+
 		}
-		
-		
+
+		.footer-avt img:hover {
+			border: 2px solid black;
+		}
 	</style>
-	
+
 </head>
+
 <body>
 
 	<div class="footer-container">
-		
-		<p id="copyright">Copyright &copy; 2021 - Nhóm 1</p>
-		
-		<div class="footer-avt">
-			<a href="/info/#kimduyen">
-				<span><img src="/info/img/kimduyen.jpg" alt=""></span>
-			</a>
-			<a href="/info/#kimngoc" >
-				<span><img src="/info/img/kimngoc.jpg" alt=""></span>
-			</a>
-			<a href="/info/#longphu" >
-				<span><img src="/info/img/longphu.jpg" alt=""></span>
-			</a>
-			<a href="/info/#minhtam" >
-				<span><img src="/info/img/minhtam.jpg" alt=""></span>
-			</a>
-			<a href="/info/#nhutquang" >
-				<span><img src="/info/img/nhutquang.jpg" alt=""></span>
-			</a>
-			<a href="/info/#phungtien" >
-				<span><img src="/info/img/phungtien.jpg" alt=""></span>
+
+		<div class="teacher-avt">
+			<a href="/info/">
+				<img src="/info/img/teacher.png" alt="">
 			</a>
 		</div>
-		
-		
-		
+
+		<p id="copyright">Copyright &copy; 2021 - Nhóm 1</p>
+
+		<div class="footer-avt">
+			<a href="/info/#kimduyen">
+				<img src="/info/img/kimduyen.jpg" alt="">
+			</a>
+			
+			<a href="/info/#kimngoc">
+				<img src="/info/img/kimngoc.jpg" alt="">
+			</a>
+			
+			<a href="/info/#longphu">
+				<img src="/info/img/longphu.jpg" alt="">
+			</a>
+			
+			<a href="/info/#minhtam">
+				<img src="/info/img/minhtam.jpg" alt="">
+			</a>
+			
+			<a href="/info/#nhutquang">
+				<img src="/info/img/nhutquang.jpg" alt="">
+			</a>
+			
+			<a href="/info/#phungtien">
+				<img src="/info/img/phungtien.jpg" alt="">
+			</a>
+		</div>
+
+
+
 	</div>
-	
+
 
 
 </body>
+
 </html>

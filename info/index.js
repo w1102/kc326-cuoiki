@@ -34,15 +34,10 @@ document.querySelector('#thongtin').addEventListener('mouseout', () => {
 
 
 const setAssignedTaskTable = () => {
-	
-	if (webReady) {
-		
-		document.querySelector('#thongtin').hidden = true
-		document.querySelector('#phancong').hidden = false
-		document.querySelector('#textleft').innerHTML = 'Phân công công việc'	
-		
-		window.history.pushState('', '', '/info/');
-	}  
+	document.querySelector('#thongtin').hidden = true
+	document.querySelector('#phancong').hidden = false
+	document.querySelector('#textleft').innerHTML = 'Phân công công việc'	
+	if (webReady)  window.history.pushState('', '', '/info/');
 }
 
 
