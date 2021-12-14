@@ -12,8 +12,8 @@
 }
 
 .centerled {
-	border: 5px solid var(--black);
-	border-radius: 15px;
+	border: 3px solid var(--black);
+	border-radius: 10px;
 	margin: 0;
 	position: absolute;
 	top: 55%;

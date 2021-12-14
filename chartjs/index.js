@@ -65,7 +65,7 @@ const chart = new Chart(ctx, {
 
 const genChartData = async (length) => {
 
-	let rawData = await getFieldIngoreNull('field2', 2)
+	let rawData = await getFieldIngoreNull('field3', 3)
 
 	if (rawData.length < length) {
 

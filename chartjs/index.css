@@ -17,6 +17,8 @@
 	height: 85%;
 }
 .centerchart {
+	border: 3px solid var(--black);
+	border-radius: 10px;
 	margin: 0;
 	position: absolute;
 	top: 50%;

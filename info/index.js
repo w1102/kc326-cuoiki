@@ -34,6 +34,10 @@ document.querySelector('#thongtin').addEventListener('mouseout', () => {
 
 
 const setAssignedTaskTable = () => {
+	
+	document.querySelector('.textleftt').hidden = false
+	document.querySelector('#giangvien').hidden = false
+	
 	document.querySelector('#thongtin').hidden = true
 	document.querySelector('#phancong').hidden = false
 	document.querySelector('#textleft').innerHTML = 'Phân công công việc'	
@@ -52,7 +56,8 @@ const setMemInfo = name => {
 	
 	window.history.pushState('', '', '/info/#' + name);
 
-	
+	document.querySelector('.textleftt').hidden = true
+	document.querySelector('#giangvien').hidden = true
 
 	document.querySelector('#thongtin').hidden = false
 	document.querySelector('#phancong').hidden = true

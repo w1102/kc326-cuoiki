@@ -1,6 +1,6 @@
-const channelID = 1585273
-const readAPIKey = 'ZYX2R6HBOVRFVM6U'
-const writeAPIKey = '860G3MEUS4OSSWNK'
+const channelID = 1421792
+const readAPIKey = 'DWTWKRWRYGQYONOM'
+const writeAPIKey = 'SSDLCZWNRHIVMJUF'
 
 const updateLimit = 15000
 
